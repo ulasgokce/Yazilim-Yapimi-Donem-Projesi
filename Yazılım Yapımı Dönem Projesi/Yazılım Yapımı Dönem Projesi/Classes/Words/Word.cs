@@ -5,10 +5,9 @@ using System.Web;
 
 namespace Yazılım_Yapımı_Dönem_Projesi
 {
-    public abstract class User
+    public class Word
     {
         public int Id { get; set; }
-        public string Username { get; set; }
-        public string Password { get; set; }
+        public string _Word { get; set; }
     }
 }

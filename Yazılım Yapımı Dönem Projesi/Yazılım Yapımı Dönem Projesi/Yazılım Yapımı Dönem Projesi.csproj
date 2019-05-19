@@ -78,9 +78,16 @@
     <Compile Include="admin\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Classes\Member.cs" />
-    <Compile Include="Classes\User.cs" />
+    <Compile Include="Classes\Users\Authorities\Authorized.cs" />
+    <Compile Include="Classes\Users\Member\Member.cs" />
+    <Compile Include="Classes\Users\Member\MemberAction.cs" />
+    <Compile Include="Classes\Words\Meaning.cs" />
+    <Compile Include="Classes\Words\Word.cs" />
+    <Compile Include="Enums\Languages.cs" />
+    <Compile Include="Enums\Permissions.cs" />
+    <Compile Include="Enums\Stages.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Classes\Users\User.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -91,6 +98,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
