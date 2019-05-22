@@ -15,15 +15,9 @@ body {
     justify-content: center;
     padding-top: 40px;
     padding-bottom: 40px;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.75)),url(../../img/bg-AdminLogin.jpg) no-repeat center center fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.90), rgba(0, 0, 0, 0.90)),url(../../img/bg-login.jpg) no-repeat center center fixed;
     background-size: cover;
     text-align: center;
-}
-
-@media only screen and (max-width: 1200px) {
-    body {
-        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.75)),url(../../img/bg-AdminLogin-Mobile.jpg) no-repeat center center fixed;
-    }
 }
 
 .form-signin {
@@ -131,7 +125,6 @@ html .btn-with-arrow.btn-quaternary.btn-outline:hover span {
 [type=password] {
     border-radius: 0 0 .25rem .25rem;
 }
-
 .ajs-message.ajs-customError {
     color: #fff;
     background-color: #d95c5c;

@@ -6,8 +6,9 @@
 <head runat="server">
     <title></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="asset/css/Bootstrap/bootstrap.min.css" rel="stylesheet" />
-    <link href="asset/css/Font-Awesome/font-awesome.min.css" rel="stylesheet" />
+    <link href="<%# Page.ResolveUrl("~") %>/asset/css/Bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="<%# Page.ResolveUrl("~") %>/asset/css/Font-Awesome/font-awesome.min.css" rel="stylesheet" />
+    <link href="<%# Page.ResolveUrl("~") %>/asset/css/Alertify/alertify.min.css" rel="stylesheet" />
     <asp:ContentPlaceHolder ID="cphCSS" runat="server">
     </asp:ContentPlaceHolder>
 </head>
@@ -15,7 +16,8 @@
     <form id="EWL" runat="server">
         <asp:ContentPlaceHolder ID="cphContent" runat="server">
         </asp:ContentPlaceHolder>
-        <script src="asset/js/JQuery/jquery-3.4.1.min.js"></script>
+        <script src="<%# Page.ResolveUrl("~") %>/asset/js/JQuery/jquery-3.4.1.min.js"></script>
+        <script src="<%# Page.ResolveUrl("~") %>/asset/js/Alertify/alertify.min.js"></script>
         <asp:ContentPlaceHolder ID="cphJS" runat="server">
         </asp:ContentPlaceHolder>
     </form>

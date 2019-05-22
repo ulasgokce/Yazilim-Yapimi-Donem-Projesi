@@ -17,7 +17,7 @@ namespace Yazılım_Yapımı_Dönem_Projesi
     public class API : System.Web.Services.WebService
     {
         [WebMethod]
-        public bool MemberLogin(Member member)
+        public Member MemberLogin(Member member)
         {
             return member.Login();
         }

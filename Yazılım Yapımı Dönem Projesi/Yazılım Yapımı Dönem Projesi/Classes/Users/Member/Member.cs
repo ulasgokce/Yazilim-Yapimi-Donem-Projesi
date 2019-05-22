@@ -53,8 +53,8 @@ namespace Yazılım_Yapımı_Dönem_Projesi
         {
             throw new NotImplementedException();
         }
-        
-        public bool Login()
+
+        public Member Login()
         {
             Database.ProcedureName = "dbo.CheckUser";
 
@@ -68,14 +68,27 @@ namespace Yazılım_Yapımı_Dönem_Projesi
             spParameter[2] = new SqlParameter("@type", SqlDbType.NVarChar, 50);
             spParameter[2].Value = "Member";
 
+            Member member = null;
             try
             {
-                Database.Queries(spParameter);
-                return true;
+                DataSet ds = Database.Queries(spParameter);
+                if (ds.Tables[0].Rows.Count == 1)
+                {
+                    member = new Member()
+                    {
+                        Id = Convert.ToInt32(ds.Tables[0].Rows[0]["id"]),
+                        Language = Convert.ToInt32(ds.Tables[0].Rows[0]["language"]),
+                        Name = ds.Tables[0].Rows[0]["name"].ToString(),
+                        Password = ds.Tables[0].Rows[0]["password"].ToString(),
+                        Surname = ds.Tables[0].Rows[0]["surname"].ToString(),
+                        Username = ds.Tables[0].Rows[0]["username"].ToString()
+                    };
+                }
+                return member;
             }
             catch
             {
-                return false;
+                return member;
             }
         }
     }
