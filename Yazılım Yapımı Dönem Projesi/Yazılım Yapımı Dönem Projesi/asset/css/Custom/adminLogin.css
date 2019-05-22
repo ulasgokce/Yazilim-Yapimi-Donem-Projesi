@@ -1,0 +1,119 @@
+﻿html,
+body {
+    height: 100%;
+}
+
+body {
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -ms-flex-align: center;
+    -ms-flex-pack: center;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background: linear-gradient(rgba(0, 0, 0, 0.90), rgba(0, 0, 0, 0.90)),url(../../img/bg-login.jpg) no-repeat center center fixed;
+    background-size: cover;
+    text-align: center;
+}
+
+.form-signin {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+    .form-signin .checkbox {
+        font-weight: 400;
+    }
+
+    .form-signin .form-control {
+        position: relative;
+        box-sizing: border-box;
+        height: auto;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+        .form-signin .form-control:focus {
+            z-index: 2;
+        }
+
+    .form-signin input[type="email"] {
+        margin-bottom: -1px;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+    .form-signin input[type="password"] {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+
+.createdBy {
+    color: white;
+}
+
+    .createdBy:hover {
+        text-decoration: none;
+        color: darkred;
+    }
+
+.logo {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+}
+
+div.error {
+    color: red;
+    margin: 2% 0 2% 0;
+}
+
+
+
+html .btn-with-arrow.btn-quaternary.btn-outline {
+    border-color: #2BAAB1 !important;
+}
+
+    html .btn-with-arrow.btn-quaternary.btn-outline:hover {
+        color: #FFF;
+        background-color: #2BAAB1;
+    }
+
+html .btn-with-arrow.btn-quaternary {
+    background-color: transparent;
+    border-color: transparent;
+    color: #2BAAB1;
+}
+
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+    cursor: pointer;
+}
+
+html .btn-with-arrow.btn-quaternary.btn-outline:hover span {
+    background-color: #30bec6 !important;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.btn-with-arrow:hover span {
+    -webkit-transform: translateX(7px);
+    transform: translateX(7px);
+}
+
+.btn-with-arrow span {
+    background-color: transparent;
+    display: inline-block;
+    height: 25px;
+    line-height: 24px;
+    width: 25px;
+    border-radius: 50%;
+    margin-left: 10px;
+    -webkit-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+}

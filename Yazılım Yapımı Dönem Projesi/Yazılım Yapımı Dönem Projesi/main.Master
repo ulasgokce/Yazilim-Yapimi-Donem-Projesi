@@ -1,0 +1,23 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="main.master.cs" Inherits="Yazılım_Yapımı_Dönem_Projesi.main" %>
+
+<!DOCTYPE html>
+
+<html lang="tr">
+<head runat="server">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="asset/css/Bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="asset/css/Font-Awesome/font-awesome.min.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="cphCSS" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="EWL" runat="server">
+        <asp:ContentPlaceHolder ID="cphContent" runat="server">
+        </asp:ContentPlaceHolder>
+        <script src="asset/js/JQuery/jquery-3.4.1.min.js"></script>
+        <asp:ContentPlaceHolder ID="cphJS" runat="server">
+        </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>

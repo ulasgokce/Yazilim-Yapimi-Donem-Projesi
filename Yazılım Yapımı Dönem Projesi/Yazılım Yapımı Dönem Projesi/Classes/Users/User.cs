@@ -6,6 +6,7 @@ using System.ComponentModel;
 
 namespace Yazılım_Yapımı_Dönem_Projesi
 {
+    [Serializable]
     public abstract class User
     {
         public int Id { get; set; }

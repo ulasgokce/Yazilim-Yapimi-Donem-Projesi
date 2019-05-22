@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Services;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace Yazılım_Yapımı_Dönem_Projesi.admin
+namespace Yazılım_Yapımı_Dönem_Projesi
 {
     public partial class Login : System.Web.UI.Page
     {
